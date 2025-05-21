@@ -1,5 +1,6 @@
 // build task management system
 //2 classes user and task class
+//how to connect the two classes
 //user class has the user deatils(name, role, id)
 //task (creating, updating, delete, retrive)
 // admin has a role of assigning task to the users, unassign and retrieve the information
@@ -7,4 +8,21 @@
 //now it gives two options user details or tasks details(if its user option creating, deleting, updating,retrieve)
 //if its task(option creating, deleting, updating,retrieve) then assign 
 //when the assign method is called all users are displayed in the terminal
+
+class User{
+    name:string;
+    id:number;
+    constructor(name:string,id:number){
+        this.name = name;
+        this.id = id
+    }
+    userDetails(): void{
+        console.log(`Enter your name`);
+        
+    }
+}
+const user = new User("Mark", 123567)
+
+console.log(user.userDetails());
+
  
