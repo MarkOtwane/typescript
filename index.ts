@@ -131,7 +131,12 @@ function validatePayment (payment: Payment){
     }
 }
 
-// validatePayment("otwanemark254@gmail.com")
+// validatePayment("otwanemark254@gmail.com") call the responsible objects
+const  paypal: PayPalPayment ={
+    type:"paypal",
+    email:"mark"
+}
+validatePayment(paypal) 
 
 class Product {
     constructor(public id:string, public name: string){
