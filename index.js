@@ -117,7 +117,12 @@ function validatePayment(payment) {
         console.log("Process bank tranfer for account number ".concat(payment.accountNumber));
     }
 }
-// validatePayment("otwanemark254@gmail.com")
+// validatePayment("otwanemark254@gmail.com") call the responsible objects
+var paypal = {
+    type: "paypal",
+    email: "mark"
+};
+validatePayment(paypal);
 var Product = /** @class */ (function () {
     function Product(id, name) {
         this.id = id;

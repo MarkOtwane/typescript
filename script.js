@@ -1,3 +1,4 @@
+"use strict";
 //generics one fuction can take different datatypes
 function getStringArray(items) {
     console.log(items);
@@ -21,7 +22,7 @@ function getProperty(obj, key) {
     return obj[key]; //dot notation/bracket notation
 }
 //objects
-var user = {
+const user = {
     id: "123e3dece",
     name: "mark",
     email: "mark@",
@@ -32,5 +33,5 @@ var user = {
 //obj user key includes id, name, email, password, profile image
 // same like user.id applicable in large software create where you dpon't have access or you don't know the objc
 console.log(getProperty(user, "email"));
-var welcome = "Hello World";
-var st = "Said account is active true"; //what yoou extect assuming you know the data of a certain api key 
+const welcome = "Hello World";
+const st = `Said account is active true`; //what yoou extect assuming you know the data of a certain api key 
